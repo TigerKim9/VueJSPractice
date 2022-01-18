@@ -1,0 +1,7 @@
+
+vue 설치
+npm install -g @vue/cli
+
+
+프로젝트 생성
+vue create 프로젝트명
