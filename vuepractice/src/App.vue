@@ -12,7 +12,13 @@
     <button @mousewheel="increase">허위매물 신고</button> <span>신고 수 : {{warning[0]}} 위험도 : {{Math.floor(warning[1])}}</span><!--v-on을 @로 대체 가능-->
     <!--@ 누르고 넣을 함수 넣기-->
   </div>
-    
+
+    <div v-for="building in buildings" :key="building">
+      이름 : {{building}}
+      <p></p>
+
+    </div>
+
   <div>
     <h4>매물갯수</h4>
     <p>{{latest}}개</p>
@@ -30,7 +36,8 @@ export default {
       playlist : 60,
       latest : 30,
       array : ['여기','저기','거기'],
-      menus : ['Home','Shop','About']
+      menus : ['Home','Shop','About'],
+      buildings : ['강남','서초','역삼']
     }
   },
   methods :{//method는 funtion의 모음 같은 느낌
