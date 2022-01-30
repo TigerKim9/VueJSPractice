@@ -11,6 +11,9 @@
     <p>{{playlist}} 만원</p>
     <button @mousewheel="increase">허위매물 신고</button> <span>신고 수 : {{warning[0]}} 위험도 : {{Math.floor(warning[1])}}</span><!--v-on을 @로 대체 가능-->
     <!--@ 누르고 넣을 함수 넣기-->
+    
+
+    <!--babel이란? 자바스크립트를 해석해주는 도구-->
   </div>
 
     <div v-for="building in buildings" :key="building">

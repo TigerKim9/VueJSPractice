@@ -5,3 +5,46 @@ npm install -g @vue/cli
 
 프로젝트 생성
 vue create 프로젝트명
+
+
+#######################
+vue : 이 시스템에서 스크립트를 실행할 수 없으므로 파일을 로드할 수 없습니다.
+
+라고 뜰 시!
+
+Windows PowerShell을 관리자 권한으로 실행하고
+
+get-help Set-ExecutionPolicy 를 치면 어떤 권한을 설정할 수 있는지 나온다
+
+
+	 -Restricted : PowerShell의 실행 권한 정책 중 기본적으로 적용되어있는 옵션. ps1 스크립트 파일을 로드하여 실행할 수 없는 정책
+
+ 
+
+	- AllSigned : 신뢰된 배포자에 의해 서명된 스크립트만 실행 할 수 있는 정책
+
+ 
+
+	- RemoteSigned : 로컬 컴튜퍼에서 본인이 생성한 스크립트만 실행 가능 또는 인터넷에서 다운로드 받은 스크립트는 신뢰된 배포자에 의해 서명된 것만 실행 가능한 정책
+
+ 
+
+	- Unrestricted : 제한 없이 모든 스크립트 실행 가능한 정책
+
+ 
+
+	- ByPass : 어떤 것도 차단하지 않고 경고 없이 실행 가능한 정책
+
+ 
+
+	- Undefined : 정책 적용 안함
+
+
+
+
+Set-ExecutionPolicy RemoteSigned 치고 나서 y
+
+Get-ExecutionPolicy 쳐서 RemoteSigned로 바뀌었는지 확인
+###########################
+
+
